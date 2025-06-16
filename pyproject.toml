@@ -1,0 +1,31 @@
+[project]
+name = "argo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mingkai Chen", email = "44886949+MingkaiChen@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.50.0",
+    "datasets>=3.5.0",
+    "google-adk>=0.3.0",
+    "google-maps-places>=0.1.25",
+    "googlemaps>=4.10.0",
+    "litellm>=1.67.2",
+    "markitdown[all]>=0.1.1",
+    "mistralai>=1.7.0",
+    "openai>=1.76.0",
+    "playwright>=1.51.0",
+    "scholarly>=1.7.11",
+    "stagehand-py>=0.3.6",
+    "wikipedia-api>=0.8.1",
+]
+
+[project.scripts]
+argo = "argo:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
